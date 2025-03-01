@@ -1,28 +1,89 @@
-h1 {
+header {
+    background-image: url('image.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; 
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.hero {
+    position: relative
+    
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 50px;
+}
+
+  title { 
   
-  font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive;
   text-align: center;
- color: black;
+  font-size: 30px;
+
+  }
   
 }
+    
+    body { 
+        font-family: Arial, sans-serif; 
+        text-align: center; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        height: 100vh; 
+        margin: 0;
+    }
+    
+    #myTextarea {
+    width: 300px; 
+    min-width: 300px; 
+    height: 500px;
+    min-height: 150px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+      
+    }
 
 body {
 background-color: ghostwhite;
 
 }
 
-p {
-  
-  text-align: center;
-}
+button { 
+        padding: 12px 25px; 
+        font-size: 16px;
+        margin-top: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-     button{
-       
-      background: palegreen;
-      align-items: center;
-      font-size: 20px;
-      width: 30%;
-      height: 50px;
-      border-color: palegreen;
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    p {
+      
+        color: black; 
+        text-align: center;
+
+    }
     
-     }
