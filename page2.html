@@ -7,37 +7,12 @@
     <title>Shared Textbox</title>
     
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
 </head>
 
 <body>
     <textarea id="sharedText" placeholder="Enter text..." rows="5" cols="40"></textarea>
     
     <button onclick="saveText()">Done</button>
-    
-    <script>
-
-        const firebaseConfig = {
-            apiKey: "YOUR_API_KEY",
-            authDomain: "YOUR_PROJECT.firebaseapp.com",
-            databaseURL: "https://YOUR_PROJECT.firebaseio.com",
-            projectId: "YOUR_PROJECT",
-            storageBucket: "YOUR_PROJECT.appspot.com",
-            messagingSenderId: "YOUR_SENDER_ID",
-            appId: "YOUR_APP_ID"
-        };
-        
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.database();
-
-        function saveText() {
-            let text = document.getElementById("sharedText").value;
-            db.ref("sharedBox").set(text);
-        }
-        
-        db.ref("sharedBox").on("value", (snapshot) => {
-            document.getElementById("sharedText").value = snapshot.val() || "";
-        });
 
     <style>
     
@@ -56,10 +31,11 @@
         }
 
         textarea {
-            display: block;
+            display: flex;
             width: 300px;
             height: 100px;
             margin-bottom: 10px;
+    
         }
 
         button {
