@@ -66,18 +66,21 @@ background-color: ghostwhite;
 }
 
 button { 
-        padding: 12px 25px; 
+
+       padding: 12px 25px; 
         font-size: 16px;
         margin-top: 10px;
-        background-color: #007bff;
+        background-color: palegreen;
         color: white;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-    }
+        align-content: center;
+
+}
 
     button:hover {
-        background-color: #0056b3;
+        background-color: palegreen;
     }
 
     p {
