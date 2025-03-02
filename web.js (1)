@@ -1,3 +1,7 @@
+new XMLHttpRequest()
+// Non-standard
+new XMLHttpRequest(options)
+
 console.log("External JavaScript file linked successfully!");
 
 const url = "https://neural.grammarbot.io/v1/check";
