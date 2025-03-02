@@ -51,17 +51,6 @@ header {
         height: 100vh; 
         margin: 0;
     }
-    
-    #myTextarea {
-    width: 300px; 
-    min-width: 300px; 
-    height: 500px;
-    min-height: 150px;
-    font-size: 16px;
-    padding: 10px;
-    border: 1px solid #ccc;
-      
-    }
 
 button onclick { 
 
