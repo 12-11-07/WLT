@@ -1,23 +1,23 @@
-new XMLHttpRequest()
-// Non-standard
-new XMLHttpRequest(options)
-
-console.log("External JavaScript file linked successfully!");
-
 const url = "https://neural.grammarbot.io/v1/check";
-const headers = {
-    "Content-Type": "application/json"
-};
-const data = {
+const data = JSON.stringify({
     text: "This be the best",
     api_key: "<API KEY>"
+});
+
+const xhr = new XMLHttpRequest();
+xhr.open("POST", url, true);
+xhr.setRequestHeader("Content-Type", "application/json");
+
+xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+            console.log(JSON.parse(xhr.responseText));
+        } else {
+            console.error("Error:", xhr.status, xhr.statusText);
+        }
+    }
 };
 
-fetch(url, {
-    method: "POST",
-    headers: headers,
-    body: JSON.stringify(data)
-})
-.then(response => response.json())
-.then(result => console.log(result))
-.catch(error => console.error("Error:", error));
+xhr.send(data);
+
+```
