@@ -58,7 +58,7 @@ button {
         font-size: 16px;
         margin-top: 10px;
         background-color: palegreen;
-        border: none;
+        border-color: palegreen;
         border-radius: 5px;
         cursor: pointer;
         align-content: center;
