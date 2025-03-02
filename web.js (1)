@@ -2,7 +2,6 @@ const url = "https://neural.grammarbot.io/v1/check";
 const data = JSON.stringify({
     text: "This be the best",
     api_key: "<API KEY>"
-
 });
 
 const xhr = new XMLHttpRequest();
@@ -20,4 +19,3 @@ xhr.onreadystatechange = function () {
 };
 
 xhr.send(data);
-
