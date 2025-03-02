@@ -87,4 +87,10 @@ button onclick {
         text-align: center;
 
     }
-    
+
+.container placeholder {
+   
+    align-content: center;
+    background-color: palegreen;
+
+}
