@@ -84,6 +84,11 @@ align-content: center;
 
 }
 
+textarea {
+    align-content: center;
+
+}
+
 button {
 
     background-color: palegreen;
