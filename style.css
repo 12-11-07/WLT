@@ -76,8 +76,20 @@ button {
         border-color: palegreen;
         align-content: center;
 
-        
-            }
+    }
+
+ .container {
+
+align-content: center;
+
+}
+
+button {
+
+    background-color: palegreen;
+    align-content: center;
+
+}
 
     p {
       
