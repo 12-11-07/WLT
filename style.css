@@ -1,17 +1,17 @@
 header {
     
-    background-image: url('image.jpg');
+    background-image: url('');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
-    height: 300px;
+    height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: black; 
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
 
 }
 
