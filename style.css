@@ -103,6 +103,16 @@ placeholder {
 
 }
 
+input, textarea {
+  text-align: center; 
+}
+
+input::placeholder,
+textarea::placeholder {
+  text-align: center;
+
+}
+
 button {
 
     background-color: palegreen;
