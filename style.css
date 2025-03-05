@@ -85,6 +85,15 @@ align-content: center;
 }
 
 textarea {
+   
+    align-content: center;
+    justify-content: center;
+    
+}
+
+placeholder {
+
+    justify-content: center;
     align-content: center;
 
 }
