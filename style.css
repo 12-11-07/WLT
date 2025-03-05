@@ -83,12 +83,6 @@ button {
 
     }
 
- .container {
-
-align-content: center;
-
- }
-
 .textbox {
   display: flex;
   justify-content: center;
