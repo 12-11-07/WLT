@@ -83,15 +83,17 @@ button {
 
     }
 
-.textbox textarea {
- 
-    text-align: center; 
+.textbox {
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
-.textbox textarea::placeholder {
-
-    text-align: center; 
+.textbox textarea {
+  text-align: center;
+  width: 100%;
 
 }
 
