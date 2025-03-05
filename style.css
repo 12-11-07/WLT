@@ -87,14 +87,12 @@ button {
 
 align-content: center;
 
-}
+ }
 
-input, textarea {
-  text-align: center; 
-}
-
-input::placeholder,
-textarea::placeholder {
+.textbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
 }
