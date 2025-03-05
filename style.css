@@ -61,16 +61,16 @@ h2 {
 
 }
 
-button { 
-  
-       padding: 12px 25px; 
+button {
+    
+        width: 30px;
         font-size: 30px;
         margin-top: 10px;
         background-color: palegreen;
         border-color: palegreen;
         border-radius: 5px;
         cursor: pointer;
-        align-content: center;
+        align-content: center; 
 
 }
 
