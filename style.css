@@ -45,47 +45,35 @@ body {
     padding-top: 60px; 
 }
 
-}
-
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 2px solid black;
+    padding: 20px 30px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background: white;
-    border-bottom: 2px solid black;
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 50px;
-    font-weight: bold;
-
-}
-
-.logo span {
-    font-weight: normal;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 20px;
+    font-size: 28px; 
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    border-bottom: 2px solid black;
+    font-size: 20px; 
+    padding: 10px 15px; 
 }
 
 .menu-toggle {
-    display: none;
-    font-size: 50px;
-    cursor: pointer;
+    font-size: 30px; 
+}
+
+body {
+    padding-top: 80px; 
 }
 
 @media (max-width: 600px) {
