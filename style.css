@@ -74,7 +74,8 @@ h3 {
         flex-direction: column;
         justify-content: left; 
         height: 100vh; 
-        
+        padding-top: 60px;
+
     }
 
 h2 {
