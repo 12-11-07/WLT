@@ -1,6 +1,7 @@
 header {
     
-    background-image: url('Home_20250301_162515_0000.jpg');
+    text-align: center;
+    margin: 10px 0; 
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
@@ -13,6 +14,42 @@ header {
     text-align: center;
     font-size: 30px;
 
+}
+
+.logo {
+    max-width: 120px;
+    display: block;
+    margin: 10px auto; 
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px; /* Reduce spacing below "WebLinguistika" */
+}
+
+a {
+    display: inline-block;
+    margin-bottom: 10px; /* Adjust spacing */
+    text-decoration: none;
+    color: blue;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto; 
+    
 }
 
 main, header {
