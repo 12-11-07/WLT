@@ -8,13 +8,19 @@
     <script src="script.js" defer></script>
 
     <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
+        
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
+        body {
+            text-align: center;
+            padding: 20px;
+        }
+        
         nav {
             display: flex;
             justify-content: space-between;
@@ -25,7 +31,7 @@
         }
 
         .site-name {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
         }
 
@@ -35,45 +41,33 @@
             font-size: 24px;
             cursor: pointer;
         }
-
-        .center-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 80vh;
+        
+        .logo-container {
+            margin-top: 30px;
         }
 
-        h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
+        .logo-container img {
+            width: 150px;
+            height: auto;
         }
 
-        .button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            font-size: 18px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
+        .welcome-text h1 {
+            font-size: 28px;
+            font-family: 'Georgia', serif;
             margin-top: 10px;
         }
-
-        .button:hover {
-            background-color: #0056b3;
+        
+        .description {
+            font-size: 16px;
+            max-width: 90%;
+            margin: 10px auto;
+            line-height: 1.6;
         }
 
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            padding: 20px;
-            background: #f1f1f1;
-        }
-
-        footer img {
-            width: 40px;
-            margin: 0 10px;
+        .section-title {
+            font-size: 24px;
+            font-family: 'Georgia', serif;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -85,24 +79,23 @@
         <button class="menu-btn">&#9776;</button>
     </nav>
 
-    <div class="center-container">
-        <h1>WebLinguistika</h1>
-        <img src="Home_20250301_162515_0000.jpg" class="logo" alt="WebLinguistika Logo" width="150">
-        <button class="button" onclick="window.location.href='page2.html';">START NOW!</button>
+    <div class="logo-container">
+        <img src="Home_20250301_162515_0000.jpg" alt="WebLinguistika Logo">
     </div>
 
-    <footer>
-        <p>Follow us on:</p>
-        <a href="https://facebook.com" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-        </a>
-        <a href="https://twitter.com" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
-        </a>
-        <a href="https://instagram.com" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-        </a>
-    </footer>
+    <div class="welcome-text">
+        <h1>Welcome to <br> WebLinguistika!</h1>
+    </div>
+
+    <p class="description">
+        Your free language analyzer! Helping you with your grammatical structure. This website allows students to type their texts for grammatical correction. Having a correct grammatical structure ensures a better comprehension of words. Grammar serves as the framework that enables clear and precise communication. It provides structure and rules for organizing words, phrases, and sentences, allowing us to convey our thoughts and ideas accurately. When grammar is used correctly, it helps eliminate ambiguity and misunderstanding, ensuring that your intended message is effectively delivered.
+    </p>
+
+    <h2 class="section-title">What is a Text?</h2>
+
+    <p class="description">
+        A Text is a common noun. It is used by people both digital and personal. It is a large unit of expression that helps someone to communicate with the other. Texts are also used to make literary works. And to sum all up...
+    </p>
 
 </body>
 </html>
