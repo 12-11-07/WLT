@@ -15,6 +15,11 @@ header {
 
 }
 
+main, header {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
 * {
     margin: 0;
     padding: 0;
