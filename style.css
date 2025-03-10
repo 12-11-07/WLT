@@ -15,12 +15,23 @@ header {
 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: white; /* Adjust to match your theme */
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -35,6 +46,25 @@ nav {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.logo {
+    display: block;
+    max-width: 100px; 
+    margin: 100px auto 20px; 
+}
+
+body {
+    padding-top: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero {
