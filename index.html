@@ -1,62 +1,108 @@
-      <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebLinguistika</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
-      <body>
- 
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .site-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 20px;
+            background: #f1f1f1;
+        }
+
+        footer img {
+            width: 40px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
     <nav>
         <span class="site-name">WebLinguistika</span>
         <button class="menu-btn">&#9776;</button>
     </nav>
 
-    <header>
-        <img src="Home_20250301_162515_0000.jpg" class="logo" alt="WebLinguistika Logo" width= 100px; />
-    </header>
-</body>
-      
-    <script src="script.js"></script>
+    <div class="center-container">
+        <h1>WebLinguistika</h1>
+        <img src="Home_20250301_162515_0000.jpg" class="logo" alt="WebLinguistika Logo" width="150">
+        <button class="button" onclick="window.location.href='page2.html';">START NOW!</button>
+    </div>
+
+    <footer>
+        <p>Follow us on:</p>
+        <a href="https://facebook.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+    </footer>
+
 </body>
 </html>
-
-<style>
-
-p {
-      font-size: 30px;
-      color: black;
-      text-align: center;
-
-}
-      
-</style>
-
-<br>
-<h1>What is a Text?</h1>
-
-<br>
-<p>A Text is a common noun. It is used by people both digital and personal. It is a large unit of expression that helps someone to communicate with the other. Texts are also used to make literary works. And to sum all up, everyone needs a text for them to he able to communicate well rather than speaking the whole time. People prefer to wrtie than to talk and we have different styles of writing which depends on the country we‘re in. </p>
-
-</html>
-
-<div class="center-container">
-    <button class="button" onclick="window.location.href='page2.html';">START NOW!</button>
-</div>
-
-<br>
-<h1>WebLinguistika</h1> 
-
-<a href="contact.html">About Us</a>
-
-
-<footer>
-    <p>Follow us on:</p>
-    <a href="https://facebook.com" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="100">
-    </a>
-    <a href="https://twitter.com" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="100">
-    </a>
-    <a href="https://instagram.com" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="100">
-    </a>
-</footer>
