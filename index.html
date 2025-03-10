@@ -4,74 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebLinguistika</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-
-    <style>
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            text-align: center;
-            padding: 20px;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #fff;
-            padding: 10px 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .site-name {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .menu-btn {
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-        }
-        
-        .logo-container {
-            margin-top: 30px;
-        }
-
-        .logo-container img {
-            width: 150px;
-            height: auto;
-        }
-
-        .welcome-text h1 {
-            font-size: 28px;
-            font-family: 'Georgia', serif;
-            margin-top: 10px;
-        }
-        
-        .description {
-            font-size: 16px;
-            max-width: 90%;
-            margin: 10px auto;
-            line-height: 1.6;
-        }
-
-        .section-title {
-            font-size: 24px;
-            font-family: 'Georgia', serif;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this file is correctly linked -->
 </head>
-
 <body>
 
     <nav>
@@ -79,23 +13,46 @@
         <button class="menu-btn">&#9776;</button>
     </nav>
 
-    <div class="logo-container">
-        <img src="Home_20250301_162515_0000.jpg" alt="WebLinguistika Logo">
-    </div>
+    <header>
+        <img src="Home_20250301_162515_0000.jpg" class="logo" alt="WebLinguistika Logo">
+    </header>
 
-    <div class="welcome-text">
-        <h1>Welcome to <br> WebLinguistika!</h1>
-    </div>
+    <main>
+        <h1 class="welcome">Welcome to <br>WebLinguistika!</h1>
+        
+        <p class="description">
+            Your free language analyzer! Helping you with your grammatical structure. 
+            This website allows students to type their texts for grammatical correction. 
+            Having a correct grammatical structure ensures a better comprehension on words. 
+            Grammar serves as the framework that enables clear and precise communication.
+        </p>
 
-    <p class="description">
-        Your free language analyzer! Helping you with your grammatical structure. This website allows students to type their texts for grammatical correction. Having a correct grammatical structure ensures a better comprehension of words. Grammar serves as the framework that enables clear and precise communication. It provides structure and rules for organizing words, phrases, and sentences, allowing us to convey our thoughts and ideas accurately. When grammar is used correctly, it helps eliminate ambiguity and misunderstanding, ensuring that your intended message is effectively delivered.
-    </p>
+        <div class="center-container">
+            <button class="button" onclick="window.location.href='page2.html';">START NOW!</button>
+        </div>
 
-    <h2 class="section-title">What is a Text?</h2>
+        <h2>What is a Text?</h2>
+        <p class="text-info">
+            A Text is a common noun. It is used by people both digital and personal. 
+            It is a large unit of expression that helps someone to communicate with the other. 
+            Texts are also used to make literary works.
+        </p>
+    </main>
 
-    <p class="description">
-        A Text is a common noun. It is used by people both digital and personal. It is a large unit of expression that helps someone to communicate with the other. Texts are also used to make literary works. And to sum all up...
-    </p>
+    <footer>
+        <p>Follow us on:</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
 
 </body>
 </html>
