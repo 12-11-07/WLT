@@ -6,6 +6,7 @@
     <title>WebLinguistika</title>
 
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -47,12 +48,13 @@
 
         textarea {
             width: 100%;
-            height: 100px;
-            padding: 10px;
+            min-height: 100px;
+            max-width: 100%;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            resize: none;
+            resize: both; 
+            padding: 10px;
         }
 
         button {
@@ -68,27 +70,8 @@
         button:hover {
             background-color: #98fb98;
         }
-        
+
         .menu {
-            display: none; 
+            display: none;
+
         }
-        
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <img src="Home_20250301_162515_0000.jpg" alt="WebLinguistika Logo" class="logo">
-        
-        <h2>WebLinguistika</h2>
-
-        <div class="input-box">
-            <textarea placeholder="Enter text..."></textarea>
-            <button>Done</button>
-        </div>
-    </div>
-
-    <script src="web.js"></script>
-
-</body>
-</html>
