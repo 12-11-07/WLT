@@ -42,18 +42,16 @@ nav {
     
 }
 
-.logo-container {
-    display: flex;
+ img src {
+    max-width: 100%; 
+    height: auto;
+     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 60px;
     text-align: center;
-}
 
-.logo-container img {
-    max-width: 100%; 
-    height: auto;
-}
+ }
 
 
  h1 {
