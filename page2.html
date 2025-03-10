@@ -14,10 +14,19 @@
             padding: 0;
         }
 
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
         .logo {
             width: 250px;
-            margin: 20px auto;
             display: block;
+            margin: 0 auto;
         }
 
         h2 {
@@ -26,14 +35,14 @@
             margin-top: 10px;
         }
 
-        .container {
+        .input-box {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
             width: 90%;
             max-width: 400px;
-            margin: auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
         textarea {
@@ -59,33 +68,24 @@
         button:hover {
             background-color: #98fb98;
         }
-
+        
         .menu {
-            position: fixed;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 20px;
-            font-size: 20px;
+            display: none; 
         }
+        
     </style>
 </head>
 <body>
 
-    <img src="Home_20250301_162515_0000.jpg" alt="WebLinguistika Logo" class="logo">
-
-    <h2>WebLinguistika</h2>
-    
     <div class="container">
-        <textarea placeholder="Enter text..."></textarea>
-        <button>Done</button>
-    </div>
+        <img src="Home_20250301_162515_0000.jpg" alt="WebLinguistika Logo" class="logo">
+        
+        <h2>WebLinguistika</h2>
 
-    <div class="menu">
-        <span>&#9776;</span> 
-        <span>◯</span> 
-        <span>&#x25c0;</span> 
+        <div class="input-box">
+            <textarea placeholder="Enter text..."></textarea>
+            <button>Done</button>
+        </div>
     </div>
 
     <script src="web.js"></script>
