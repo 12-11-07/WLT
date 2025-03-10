@@ -15,88 +15,26 @@ header {
 
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar {
-    position: fixed; 
-    top: 0; 
-    left: 0;
-    width: 100%; 
-    background: white;
-    border-bottom: 2px solid black;
-    padding: 15px 20px;
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000; 
+    padding: 10px 20px;
+    background-color: white; /* Adjust to match your theme */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-body {
-    padding-top: 60px; 
+.site-name {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: white;
-    border-bottom: 2px solid black;
-    padding: 20px 30px; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 28px; 
-}
-
-.nav-links a {
-    font-size: 20px; 
-    padding: 10px 15px; 
-}
-
-.menu-toggle {
-    font-size: 30px; 
-}
-
-body {
-    padding-top: 80px; 
-}
-
-@media (max-width: 600px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: white;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        border-top: 2px solid black;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
+.menu-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .hero {
