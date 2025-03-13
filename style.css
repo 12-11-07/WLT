@@ -15,7 +15,6 @@ body {
     justify-content: space-between;
 }
 
-/* General Styles for the Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
