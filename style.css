@@ -102,6 +102,90 @@ header {
     margin: 20px 0;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.site-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+header {
+    margin: 10px 0;
+}
+
+.logo {
+    width: 20%; 
+    max-width: 250px;
+    min-width: 120px; 
+    display: block;
+    margin: 0 auto;
+}
+
+.welcome {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    margin-top: 10px; 
+}
+
+.description {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.center-container {
+    margin: 20px 0;
+}
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.site-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+header {
+    margin: 10px 0;
+}
+
+.logo {
+    width: 20%; 
+    max-width: 250px;
+    min-width: 120px; 
+    display: block;
+    margin: 0 auto;
+}
+
+.welcome {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    margin-top: 10px; 
+}
+
+.description {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
 .button {
     background-color: #007bff;
     color: white;
