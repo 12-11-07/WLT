@@ -15,13 +15,12 @@ body {
     justify-content: space-between;
 }
 
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: white;
     padding: 10px 20px;
-    border-bottom: 2px solid #ddd;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
 .site-name {
@@ -29,40 +28,37 @@ body {
     font-weight: bold;
 }
 
-.menu-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
+
+header {
+    margin: 10px 0;
 }
 
-.menu {
-    display: none;
-    list-style-type: none;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-}
-
-.menu li {
-    padding: 10px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.menu.active {
+.logo {
+    width: 20%; 
+    max-width: 250px;
+    min-width: 120px; 
     display: block;
+    margin: 0 auto;
 }
 
+.welcome {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    margin-top: 10px; 
+}
 
-nav {
+.description {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.center-container {
+    margin: 20px 0;
+}
+
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
