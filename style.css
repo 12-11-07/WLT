@@ -15,6 +15,54 @@ body {
     justify-content: space-between;
 }
 
+/* General Styles for the Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.site-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu.active {
+    display: block;
+}
+
+
 nav {
     display: flex;
     justify-content: space-between;
