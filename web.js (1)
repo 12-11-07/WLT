@@ -46,7 +46,6 @@ function checkGrammar() {
     let userInput = document.getElementById("userInput").value.trim().toLowerCase();
     let resultText = document.getElementById("result");
 
-    // Split input into words and check each one
     let words = userInput.split(" ");
     let allCorrect = words.every(word => correctWords.includes(word));
 
