@@ -39,3 +39,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   elements.forEach(element => observer.observe(element));
 });
+
+const correctWords = ["hello", "world", "grammar", "correct", "sentence", "example"];
+
+function checkGrammar() {
+    let userInput = document.getElementById("userInput").value.trim().toLowerCase();
+    let resultText = document.getElementById("result");
+
+    // Split input into words and check each one
+    let words = userInput.split(" ");
+    let allCorrect = words.every(word => correctWords.includes(word));
+
+    if (allCorrect) {
+        resultText.textContent = "Your statement is well-written.";
+        resultText.style.color = "green";
+    } else {
+        resultText.textContent = "Grammatically incorrect.";
+        resultText.style.color = "red";
+    }
+}
