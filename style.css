@@ -101,6 +101,9 @@ footer {
 
 footer p {
     margin-bottom: 10px;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+
 }
 
 .social-links img {
