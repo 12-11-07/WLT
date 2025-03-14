@@ -1,4 +1,6 @@
 main {
+    
+    flex: 1;
     min-height: 80vh; 
     padding-bottom: 50px; 
 }
