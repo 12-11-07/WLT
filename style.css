@@ -1,21 +1,13 @@
-main {    
-    flex: 1;
-    min-height: 80vh; 
-    padding-bottom: 50px; 
-
-}
-
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    background-color: white;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
 }
+
 
 nav {
     display: flex;
@@ -23,17 +15,19 @@ nav {
     padding: 10px 20px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
-
 }
 
 .site-name {
-   
-    font-family: "Times New Roman",serif;
+    font-family: "Times New Roman", serif;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 0;
-    padding-button: 0;
+}
 
+.menu-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 
@@ -42,18 +36,23 @@ header {
 }
 
 .logo {
-    width: 20%; 
+    width: 20%;
     max-width: 250px;
-    min-width: 120px; 
+    min-width: 120px;
     display: block;
     margin: 0 auto;
+}
+
+
+main {
+    flex: 1;
+    padding-bottom: 50px;
 }
 
 .welcome {
     font-size: 28px;
     font-weight: bold;
     font-family: "Times New Roman", serif;
-    margin-top: 10px; 
 }
 
 .description {
@@ -67,7 +66,8 @@ header {
     margin: 20px 0;
 }
 
-.button {
+
+.button, .done-btn {
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
@@ -75,41 +75,13 @@ header {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
-.button:hover {
+.button:hover, .done-btn:hover {
     background-color: #0056b3;
 }
 
-h2 {
-    font-size: 24px;
-    margin-top: 20px; 
-    font-family: "Times New Roman", serif;
-}
-
-.text-info {
-    width: 80%;
-    margin: 10px auto;
-    font-size: 16px;
-}
-
-footer {
-    margin-top: auto; 
-    padding: 10px;
-    background-color: white;
-}
-
-footer p {
-    margin-bottom: 10px;
-    font-family: "Times New Roman", serif;
-    font-weight: bold;
-
-}
-
-.social-links img {
-    width: 40px;
-    margin: 5px;
-}
 
 .input-box {
     background-color: #ffffff;
@@ -123,4 +95,30 @@ footer p {
     align-items: center;
     justify-content: center;
     margin: 20px auto;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: both;
+    padding: 10px;
+}
+
+footer {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+}
+
+.social-links img {
+    width: 40px;
+    margin: 5px;
 }
