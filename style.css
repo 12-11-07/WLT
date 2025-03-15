@@ -80,48 +80,6 @@ body {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-#menuBtn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-#menuBtn:hover {
-    background: #555;
-}
-
-#sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background: #222;
-    color: white;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
-    transition: 0.3s ease-in-out;
-}
-
-#closeBtn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    float: right;
-}
-
-#sidebar.active {
-    left: 0;
-}
-
 main {    
     flex: 1;
     min-height: 80vh; 
