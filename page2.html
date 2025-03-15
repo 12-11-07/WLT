@@ -3,106 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css"> 
-
+    <title>Grammar Checker</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
 <body>
-  <nav>
+
+    <nav>
         <span class="site-name">WebLinguistika</span>
         <button class="menu-btn">&#9776;</button>
     </nav>
 
-<header>
+    <header>
         <img src="Home_20250301_162515_0000.jpg" class="logo" alt="WebLinguistika Logo">
     </header>
 
-<main>
-        <h1 class="welcome">WebLinguistika </h1>
+    <main>
+        <h1 class="welcome">WebLinguistika</h1>
 
-    <style>
-
-    body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-top: 20px;
-        }
-
-        .logo {
-            width: 250px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .input-box {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 400px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        textarea {
-           
-            width: 100%;
-            min-height: 100px;
-            text-align: center;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            resize: both;
-            padding: 10px;
-        }
-
-    </style>
-</head>
-<body>
-
-    <textarea id="textInput" placeholder="Enter text..."></textarea>
-    <br>
-    <button onclick="checkGrammar()">Done</button>
-    <p id="result"></p>
-
-    <script>
-        function checkGrammar() {
-            let textBox = document.getElementById("textInput");
-            let userInput = textBox.value.trim(); 
-            let correctText = "Hello"; 
-            
-            let result = document.getElementById("result");
-
-            if (userInput === correctText) {
-                result.innerHTML = "Your text is well-written!";
-            } else {
-                result.innerHTML = "Your text is incorrect!";
-            }
-        }
-
-    </script>
-
-</body>
-</html>
-    
-
-    <script>
-        
-        console.log("Page 2 Loaded!");
-
-        document.addEventListener("DOMContentLoaded", function() {
-            console.log("DOM Loaded!");
-        });
-    </script>
+        <div class="input-box">
+            <textarea id="textInput" placeholder="Enter text..."></textarea>
+            <button class="done-btn" onclick="checkGrammar()">Done</button>
+            <p id="result"></p>
+        </div>
+    </main>
 
     <footer>
         <p>Follow us on:</p>
@@ -118,6 +41,22 @@
             </a>
         </div>
     </footer>
+
+    <script>
+        function checkGrammar() {
+            let textBox = document.getElementById("textInput");
+            let userInput = textBox.value.trim();
+            let correctText = "Hello"; 
+            
+            let result = document.getElementById("result");
+
+            if (userInput === correctText) {
+                result.innerHTML = "Your text is well-written!";
+            } else {
+                result.innerHTML = "Your text is incorrect!";
+            }
+        }
+    </script>
 
 </body>
 </html>
