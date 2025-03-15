@@ -1,5 +1,5 @@
 function toggleMenu() {
-    document.querySelector(".menu").classList.toggle("active");
+    document.querySelector('.menu').classList.toggle('show');
 }
 
 const url = "https://neural.grammarbot.io/v1/check";
