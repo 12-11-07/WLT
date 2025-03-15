@@ -36,13 +36,13 @@ body {
     justify-content: center;
     text-align: center;
     font-size: 2rem;
-    transition: .3s ease-in-and-out;
+    transition: .3s ease;
 
 }
 
 .off-screen-menu.active {
     
-    background-color: #efefef;
+    background-color: black;
     border-left: 2px solid #868686;
     right: 0;
     height: 100vh;
