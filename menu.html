@@ -10,7 +10,7 @@
 
     <nav class="navbar">
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <ul class="menu">
+        <ul class="menu" id="menu-list">
             <li><a href="#" onclick="showSection('home')">Home</a></li>
             <li><a href="#" onclick="showSection('about')">About Us</a></li>
             <li><a href="#" onclick="showSection('help')">Help</a></li>
@@ -19,34 +19,95 @@
 
     <div id="content">
         <section id="home" class="section active">
-          
-          <link rel="indexHTML" href="index.HTML">
+            <h1>Welcome to Home</h1>
+            <p>This is the home page content.</p>
         </section>
         <section id="about" class="section">
-            <h1>About Us
-            <br>Contact informations</h1>
-            
+            <h1>About Us</h1>
+            <p>Learn more about us here.</p>
         </section>
         <section id="help" class="section">
-            <h1>Help
-            <br>Weblinguistika</h1>
+            <h1>Help</h1>
+            <p>Find help and support here.</p>
         </section>
     </div>
 
     <script>
+        function toggleMenu() {
+            let menu = document.getElementById('menu-list');
+            menu.classList.toggle('show');
+        }
+
         function showSection(sectionId) {
             let sections = document.querySelectorAll('.section');
             sections.forEach(section => {
                 section.classList.remove('active');
             });
             document.getElementById(sectionId).classList.add('active');
+            
+            // Hide menu after selection (for better UX on mobile)
+            document.getElementById('menu-list').classList.remove('show');
         }
     </script>
 
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            display: none;
+            flex-direction: column;
+            background: #444;
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            width: 150px;
+            border-radius: 5px;
+        }
+
+        .menu li {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .menu li:hover {
+            background: #555;
+        }
+
+        .menu-toggle {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .show {
+            display: flex;
+        }
+
         .section {
             display: none;
+            padding: 20px;
         }
+
         .section.active {
             display: block;
         }
