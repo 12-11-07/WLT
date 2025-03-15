@@ -1,6 +1,14 @@
-function toggleMenu() {
-    document.querySelector('.menu').classList.toggle('show');
-}
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
+const closeBtn = document.getElementById("closeBtn");
+
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+});
 
 const url = "https://neural.grammarbot.io/v1/check";
 const data = JSON.stringify({
