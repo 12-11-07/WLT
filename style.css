@@ -1,0 +1,126 @@
+main {    
+    flex: 1;
+    min-height: 80vh; 
+    padding-bottom: 50px; 
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.site-name {
+   
+    font-family: "Times New Roman",serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-button: 0;
+
+}
+
+
+header {
+    margin: 0;
+}
+
+.logo {
+    width: 20%; 
+    max-width: 250px;
+    min-width: 120px; 
+    display: block;
+    margin: 0 auto;
+}
+
+.welcome {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    margin-top: 10px; 
+}
+
+.description {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.center-container {
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px; 
+    font-family: "Times New Roman", serif;
+}
+
+.text-info {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: auto; 
+    padding: 10px;
+    background-color: white;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+
+}
+
+.social-links img {
+    width: 40px;
+    margin: 5px;
+}
+
+.input-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
