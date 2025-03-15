@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="menu">
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About Us</a></li>
+            <li><a href="#" onclick="showSection('help')">Help</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section id="home" class="section active">
+          
+          <link rel="indexHTML" href="index.HTML">
+        </section>
+        <section id="about" class="section">
+            <h1>About Us
+            <br>Contact informations</h1>
+            
+        </section>
+        <section id="help" class="section">
+            <h1>Help
+            <br>Weblinguistika</h1>
+        </section>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            let sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+    <style>
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+    </style>
+
+</body>
+</html>
