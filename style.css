@@ -7,10 +7,10 @@
 }
 
 a {
-    color: #efefef;
+    color: white;
 }
 a:visited {
-    color: #efefef;
+    color: white;
 }
 a:hover {
     color: #6F86FF;
@@ -22,98 +22,70 @@ body {
 }
 
 .off-screen-menu {
-    background-color: #efefef;
-    border-left: 2px solid #868686
+    background-color:  rgb(34, 37, 49);
     height: 100vh;
     width: 100%;
-    max-width: 300px;
+    max-width: 450px;
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -450px;
     display: flex;
     flex-direction: column;
     align-items: center;    
     justify-content: center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     transition: .3s ease;
-
 }
 
 .off-screen-menu.active {
-    
-    background-color: black;
-    border-left: 2px solid #868686;
     right: 0;
-    height: 100vh;
-    width: 100%;
-    max-width: 300px;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center:
-    text-align: center;
-    font-size: 2rem;
-    transition: .3s ease;
-    
+
 }
 
 .ham-menu {
-    height: 25px;
-    width: 30px;
+    height: 50px;
+    width: 40px;
     margin-left: auto;
     position: relative;
-    cursor: pointer;
-
 }
 
 .ham-menu span {
-    height: 4px;
+    height: 5px;
     width: 100%;
     background-color: #6F86FF;
-    border-radius: 5px;
+    border-radius: 25px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: 0.3s ease-in-and-out;
+    transition: .3s ease;
 }
 
 .ham-menu span:nth-child(1) {
-    transform-origin: top-left;
-    top: 20%;
-
+    top: 25%;
 }
 
 .ham-menu span:nth-child(3) {
-     transform-origin: bottom-left;
-     top: 80%;
+    top: 75%;
 }
 
 .ham-menu.active span {
     background-color: white;
-
 }
+
 .ham-menu.active span:nth-child(1) {
     top: 50%;
-    transform: rotate(45deg);
-    translate(4px, 4px);
-
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .ham-menu.active span:nth-child(2) {
     opacity: 0;
-
 }
 
 .ham-menu.active span:nth-child(3) {
     top: 50%;
-    transform: rotate(-45deg);
-    translate(40x, 4px);
-
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 main {    
@@ -138,7 +110,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 1rem;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
 
