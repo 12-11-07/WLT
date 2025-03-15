@@ -13,6 +13,15 @@
         <button class="menu-btn">&#9776;</button>
     </nav>
 
+<script>
+    fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('menu-container').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading menu:', error));
+</script>
+
     <header>
         <img src="Home_20250301_162515_0000.jpg" class="logo" alt="WebLinguistika Logo">
     </header>
