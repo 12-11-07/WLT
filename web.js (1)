@@ -1,13 +1,10 @@
-const menuBtn = document.getElementById("menuBtn");
-const sidebar = document.getElementById("sidebar");
-const closeBtn = document.getElementById("closeBtn");
+const hamMenu = document.querySelector(".ham-menu");
 
-menuBtn.addEventListener("click", () => {
-    sidebar.classList.add("active");
-});
+const offScreenMenu = document.querySelector(".off-screen-menu");
 
-closeBtn.addEventListener("click", () => {
-    sidebar.classList.remove("active");
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
 });
 
 const url = "https://neural.grammarbot.io/v1/check";
