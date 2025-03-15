@@ -80,12 +80,30 @@
 </head>
 <body>
 
-        <div class="input-box">
-            <textarea placeholder="Enter text..."></textarea>
-   
-<button onclick="checkGrammar()">Done</button>
-        <p id="result"></p>
-    </div>
+    <textarea id="textInput" placeholder="Enter text..."></textarea>
+    <br>
+    <button onclick="checkGrammar()">Done</button>
+    <p id="result"></p>
+
+    <script>
+        function checkGrammar() {
+            let textBox = document.getElementById("textInput");
+            let userInput = textBox.value.trim(); // Trim spaces
+            let correctText = "Hello"; // The correct text we expect
+            
+            let result = document.getElementById("result");
+
+            if (userInput === correctText) {
+                result.innerHTML = "✅ Grammar is Correct!";
+            } else {
+                result.innerHTML = "❌ Incorrect Grammar! Expected: <b>Hello</b>";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
     
 
     <script>
