@@ -32,11 +32,11 @@ body {
   }
 }
 
-/* Adjust text size for larger screens (desktops) */
 @media (min-width: 1024px) {
     .menu-button {
         font-size: 1rem;
-    }
+   
+ }
 }
 
 .off-screen-menu {
