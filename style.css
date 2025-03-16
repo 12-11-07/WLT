@@ -273,11 +273,11 @@ header {
 
 .done-btn {
     font-size: 18px; 
-    padding: 12px 24px;
+    padding: 12px 20px;
     border: none;
     background-color: #4CAF50; 
     color: white;
-    border-radius: 5px; 
+    border-radius: 3px; 
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
