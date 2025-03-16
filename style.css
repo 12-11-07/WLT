@@ -44,7 +44,7 @@ body {
     height: auto;
     width: 100%;
     max-width: 250px;
-    position: fixed;
+    position: relative;
     min-height: 150px;
     top: 50px;
     right: -450px;
@@ -164,7 +164,7 @@ body {
     cursor: pointer;
     padding: 5px 10px;
     z-index: 1000; 
-
+    margin: 0;
 }
 
 .back-button {
