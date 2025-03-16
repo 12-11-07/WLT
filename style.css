@@ -318,10 +318,32 @@ h2 {
     font-size: 16px;
 }
 
+.divider {
+    border: 1px solid #ddd; 
+    margin: 20px 0;
+
+}
+
+.grammar-importance {
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 10px; 
+    margin-top: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.grammar-importance h2 {
+    color: #333;
+    text-align: center;
+
+}
+
 result.innerHTML {
     font-style: italic;
 
 }
+
 
 footer {
     margin-top: auto; 
