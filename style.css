@@ -282,6 +282,11 @@ header {
 
 }
 
+#textInput:: placeholder {
+    text-align: center;
+
+}
+
 .done-btn {
     font-size: 18px; 
     padding: 12px 20px;
