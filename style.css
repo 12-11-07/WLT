@@ -271,6 +271,17 @@ header {
     background-color: #0056b3;
 }
 
+#textInput {
+    width: 300px;  
+    height: 150px; 
+    resize: both;  
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
 .done-btn {
     font-size: 18px; 
     padding: 12px 20px;
